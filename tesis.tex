@@ -1,0 +1,196 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[backend=biber,style=numeric]{biblatex}
+\addbibresource{$HOME/biblioteca/refs.bib}
+\usepackage{csquotes}
+\usepackage[english]{babel}
+\usepackage[letterpaper,margin=2.0cm]{geometry}
+\usepackage{array}
+   \usepackage{amsmath,amsthm,amssymb}
+   \usepackage[makeroom]{cancel}
+   \usepackage{transparent}
+   \usepackage{changepage}
+   \usepackage{multicol}
+   \usepackage{multirow}
+   \usepackage{graphicx}
+   \usepackage{pdfpages}
+   \usepackage{booktabs}
+   \usepackage{multicol}
+   \usepackage{physics}
+   \usepackage{microtype}
+   \usepackage{titling}
+   \usepackage{wrapfig}
+   \usepackage{import}
+   \usepackage{xcolor}
+   \usepackage{float}
+   \usepackage{bm}
+%\usepackage{amsfonts}
+%\usepackage{enumerate}
+%\usepackage[section]{algorithm}
+%\usepackage{algorithm}
+%\usepackage{algorithmic}
+%\usepackage{algpseudocode}
+\usepackage{titlesec}
+\newtheorem{theorem}{Theorem}
+  \titleformat{\chapter}[hang]
+    {\normalfont\LARGE\bfseries}
+    {\thechapter}{20pt}{\LARGE}
+
+%_____Fuentes_____
+%\usepackage{fontspec}
+%\setmainfont{Asana-Math}
+
+\usepackage{mathpazo}
+\usepackage{domitian}
+\usepackage[T1]{fontenc}
+\let\oldstylenums\oldstyle
+
+%\usepackage[T1]{fontenc}
+%\usepackage[urw-garamond]{mathdesign}
+
+%\usepackage[sfdefault]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
+%\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
+%\usepackage{times}
+
+%\usepackage{apacite}
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+\setcounter{secnumdepth}{5}
+%   Generate the environment for the abstract:
+\newcommand\summaryname{\textbf{Abstract}}
+\newenvironment{Abstract}%
+    {\small\begin{center}%
+    \bfseries{\summaryname} \end{center}}
+
+%	DATOS BÁSICOS
+%----------------------------------------------------------------------------------------
+\renewcommand{\title}{Something about the properties of FeGe and FeSe}
+\newcommand{\UDLAP}{Universidad de las Américas Puebla}
+\newcommand{\yo}{Freddy Elí Campillo Dorantes}
+\newcommand{\ID}{159518}
+\newcommand{\coco}{Dr. Miguel Ángel Ocaña Bribiesca}
+\newcommand{\UC}{\expandafter\MakeUppercase\expandafter}
+
+\usepackage{parskip}
+
+    \begin{document}
+\begin{titlepage}
+\begin{center}
+{\large \expandafter\MakeUppercase\expandafter{\UDLAP}}\\[4em]
+
+\textsc{\large School of Sciences}\\[1em]
+
+\textsc{\large Department of Mathematics, Physics and actuarial sciences}\\[1em]
+
+%Figura
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.5\textwidth]{./figures/EscudoUDLAP.jpg}
+\end{center}
+\end{figure}
+
+\vspace{2em}
+
+{\Large \textbf{\UC{\title}}}\\[3em]
+
+\textsc{\large 
+	%Trabajo de investigación/mini thesis/
+minor thesis submitted  by the student}\\[1em]
+
+\textsc{\large \yo}\\[1em]
+
+\textsc{\large \ID}\\[1em]
+
+\textsc{\large Advisor}\\[1em]
+
+\textsc{\large \coco }
+
+\end{center}
+
+\vspace*{\fill}
+\textsc{San Andrés Cholula, Puebla. \hspace*{\fill} Fall, 2021}
+
+\end{titlepage}
+\pagestyle{empty}
+\begin{center}
+
+%\textsc{\large Trabajo de investigación que presenta el/la estudiante Nombre, ID}\\[4em]
+
+%\textsc{\large Asesor del proyecto}\\[6em]
+%\vspace{2em}
+%\rule{6cm}{.1pt}\\
+%Nombre del Director\\[3em]
+
+
+%\textsc{\large Presidente de Tesis}\\[6em]
+%\vspace{2em}
+%\rule{6cm}{.1pt}\\
+%Nombre del Presidente\\[3em]
+
+%\textsc{\large Secretario de Tesis}\\[6em]
+%\vspace{2em}
+%\rule{6cm}{.1pt}\\
+%Nombre del Secretario\\[3em]
+\newpage
+
+\end{center}
+
+%\bibliographystyle{unsrt}
+%\bibliographystyle{apacite}
+\pagestyle{myheadings}
+
+\tableofcontents
+\newpage
+
+\begin{Abstract}
+\begin{changemargin}{1cm}{1cm}
+	\textbf{Place holder} Initial stages of the epitaxial manganese nitride growth on the (111)-(2$\times$2) indium nitride surface were studied by first-principles calculation within the density functional theory formalism including spin polarisation. 
+	The computational calculations were performed using the PWscf program of the quantum espresso suite, where the electro-ion interactions were treated according to a pseudopotential approach and the exchange-correlation energy is modelled using the generalised gradient approximation.
+	First we studied the adsorption of Mn atoms on high symmetry places, varying the coverage from $\frac{1}{4}$ to a full monolayer. The results showed the T4 site as the most optimal geometry. 
+	Then, Mn incorporation was investigated, this occurs when an Mn atom displaces an In atom from the first layer, with the In become the new adatoms to be adsorbed. The results yielded -- as the most favourable structure.
+Electronic properties were determined by performing density of states (DOS) and projected density of states (PDOS) calculations for the most favourable structures (repeated). For all the different test, the DOS is non zero at the Fermi level, indicating they all are metallic.
+
+%Un resumen es un texto de entre 2s00 y 300 palabras que
+%proporciona información de toda la tesis.
+%Tu resumen debe cubrir las preguntas:
+%?`qué hice en este trabajo?
+%?`por qué hice este trabajo? 
+%?`qué métodos utilicé para responder la pregunta que estoy
+%tratanto de contestar?
+%?`qué encontré? ?`cuáles son mis resultados?
+%?`por qué son relevantes mis resultados?
+\end{changemargin}
+\end{Abstract}
+
+\textbf{Keywords}: Density functional theory, Epitaxial growth, Indium nitride, Manganese Nitride.
+\newpage
+
+\chapter{Introduction }
+In recent years new studies about the structural, electronic, and magnetic properties of transition metal composites have emerged because of their possible applications in the field of spintronics. In this area, it is important to determine the efficient alignment of the electronic spin. One important type of system are the diluted magnetic semiconductors (DMS) that incorporate of transition metals. DMS monolayers with polarized spins allow an injection of polarized electrons into metal-semiconductor interfaces, that is why it is important to know the spin alignment in heterostructures and interfaces. Gallium (Ga), manganese (Mn) and Arsenic (As) (Ga1-xMnxAs) have been investigated because they possess magnetic properties, however, they also have a low Curie temperature. 
+Now, theoretical studies have predicted high curie temperatures for prohibited band gap semiconductors. \cite{dietl2001hole}.
+Also, first principle studies within the density functional theory have been conducted on MnN in Zinc-blende, sodium chloride and wurzite phases, ignoring spin polarization. \cite{paiva2004first}
+Research has been done on MnN and MnAs on Zinc-blende phase where calculations use spin polarization because the materials present magnetic properties, both local density approximations (LDA) and generalized grediente aproximations (GGA) were used.\cite{Espitia2017}
+Information relevant of MnN, such as, lattice parameter and bulk modulus have been determined \cite{cheng2005first}, and that it possess stable antiferromagnetic characteristics at temperatures of the order of 753 K \cite{suzuki2000crystal}. Additionally, first principle studies have been conducted on the stability and the elastic and electronic properties of MnN in tetragonal phase.\cite{yu2015stability}
+
+In summary, MnN is a transition metal nitride that possesses relevant characteristics for spintronics applications. This material has been well studies in a bulk environment, nevertheless, there's little information about the properties of it's surface configuration.
+It is our goal to study the epitaxial growth of MnN over the (111) zinc-blende InN surface. This study will explore the possibility that this material could be used as substrate for material growth.
+The calculations will be performed within the density functional theory including spin polarization using the PWscf program from the quantum espresso suit \cite{giannozzi2009quantum}
+%utlizando GGA [8][9]
+
+\chapter{Density Functional Theory} 
+\input{MT.tex}
+\newpage
+\chapter{Computational Method}
+\input{método.tex}
+\newpage
+\chapter{Results}
+\input{resultados.tex}
+\newpage
+\chapter{Conclusions}
+\newpage
+%\bibliographystyle{apacite}
+%\bibliography{bibliografia}
+%\bibliographystyle{unsrt}
+\printbibliography
+\end{document}
